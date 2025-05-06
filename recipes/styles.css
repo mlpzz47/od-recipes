@@ -101,3 +101,41 @@ flex-grow: 1;
 .item--home a:is(:hover,:focus,:active){
     color: var(--scnd-text-color);
 }
+
+/* ----- HEADER ENDS ----- */
+.content-container {
+    margin: 40px auto;
+    max-width: 1080px;
+    padding: 0 5dvw;
+}
+h1 {
+    color: var(--primary-color);
+    margin: 40px 0;
+}
+
+.content-container img {
+    display: block;
+    width: 400px;
+    max-width: 100%;
+}
+
+.description {
+    margin: 40px 0;
+}
+
+.content-container h2 {
+    color: var(--scnd-color-nav);
+}
+
+.ingredients-list, .steps-list {
+    list-style: none;
+    margin-bottom: 40px;
+}
+
+.ingredient,.step {
+    margin: 10px;
+}
+
+/* ----- HEADER ENDS ----- */
+/* ----- HEADER ENDS ----- */
+/* ----- HEADER ENDS ----- */
