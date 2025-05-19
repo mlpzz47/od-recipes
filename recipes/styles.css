@@ -34,7 +34,7 @@ body {
 }
 
 .header-logo-container {
-width: 150px;
+    width: 150px;
 }
 
 .header-logo {
@@ -103,9 +103,14 @@ flex-grow: 1;
 }
 
 /* ----- HEADER ENDS ----- */
+
+
+
+/* ----- MAIN STARTS ----- */
+
 .content-container {
     margin: 40px auto;
-    max-width: 1080px;
+    max-width: 900px;
     padding: 0 5dvw;
 }
 h1 {
@@ -127,15 +132,39 @@ h1 {
     color: var(--scnd-color-nav);
 }
 
-.ingredients-list, .steps-list {
-    list-style: none;
+.ingredients-list,.steps-list {
     margin-bottom: 40px;
+}
+
+.steps-list {
+    margin-bottom: 40px;
+}
+
+.step::marker {
+    content: counter(list-item) " - ";
+    color: var(--primary-color);
+    font-weight: 800;
+}
+
+.ingredient::marker {
+    content: "-  ";
+    color: var(--primary-color);
+    font-weight: 800;
 }
 
 .ingredient,.step {
     margin: 10px;
 }
 
-/* ----- HEADER ENDS ----- */
-/* ----- HEADER ENDS ----- */
-/* ----- HEADER ENDS ----- */
+/* ----- MAIN ENDS ----- */
+
+
+/* ----- FOOTER STARTS ----- */
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #333;
+    color: #ededed;
+}
+/* ----- FOOTER ENDS ----- */

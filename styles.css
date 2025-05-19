@@ -1,0 +1,117 @@
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+
+
+body {
+    --scnd-color: #005;
+    --scnd-color-nav: #237;
+    --primary-color: #ca0;
+    --scnd-text-color:  #fff;
+    --body-bgc: #eeeeee;
+    font-family: montserrat;
+    background-color: var(--scnd-color);
+}
+
+h1 {
+    text-align: center;
+    margin: 40px;
+    color: var(--primary-color);
+}
+
+.recipe-nav-container {
+    width: 100%;
+    background-color: var(--body-bgc);
+}
+
+.recipe-nav {
+    max-width: 100%;
+    margin: 0 10dvw;
+}
+
+.recipe-nav-list {
+    display: grid;
+    grid-template: repeat(auto-fit, minmax(200px, 1fr)) / repeat(auto-fit, minmax(200px, 1fr));
+    gap: 40px;
+    list-style: none;
+    padding: 40px 0;
+}
+
+
+.item-content {
+    display: block;
+    background-color: var(--scnd-color-nav);
+    border-radius: 25px;
+}
+
+.item-content img {
+    width: 100%;
+    display: block;
+    aspect-ratio: 1 / 1;
+    border-radius: 25px 25px 0 0;
+}
+
+.content-caption {
+    padding: 10px 0;
+    text-align: center;
+}
+
+.content-caption a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.content-caption a:is(:hover,:focus) {
+    color: var(--scnd-text-color);
+    text-shadow: 0 0 3px var(--scnd-text-color);
+}
+
+footer {
+    padding: 25px;
+    text-align: center;
+    background-color: #333;
+    color: #ededed;
+}
