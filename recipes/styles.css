@@ -1,11 +1,50 @@
-* {
+/* Josh's Custom CSS Reset https://www.joshwcomeau.com/css/custom-css-reset/ */
+
+*, *::before, *::after {
     box-sizing: border-box;
 }
 
-div,header,h1,h2,h3,h4,p,ul,ol,li,main,a,img,body {
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    html {
+        interpolate-size: allow-keywords;
+    }
+}
+
+body {
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+    display: block;
+    max-width: 100%;
+}
+
+input, button, textarea, select {
+    font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+    overflow-wrap: break-word;
+}
+
+p {
+    text-wrap: pretty;
+}
+h1, h2, h3, h4, h5, h6 {
+    text-wrap: balance;
+}
+
+#root, #__next {
+    isolation: isolate;
+}
+
+
 
 body {
     --scnd-color: #005;
@@ -34,7 +73,9 @@ body {
 }
 
 .header-logo-container {
-    width: 150px;
+    width: 125px;
+    filter: drop-shadow(0 0 20px var(--primary-color));
+    margin: 8px 0;
 }
 
 .header-logo {
@@ -100,6 +141,7 @@ flex-grow: 1;
 
 .item--home a:is(:hover,:focus,:active){
     color: var(--scnd-text-color);
+    text-shadow: 0 0 3px var(--scnd-text-color);
 }
 
 /* ----- HEADER ENDS ----- */
@@ -109,13 +151,14 @@ flex-grow: 1;
 /* ----- MAIN STARTS ----- */
 
 .content-container {
-    margin: 40px auto;
+    margin: 0 auto;
     max-width: 900px;
-    padding: 0 5dvw;
+    padding: 40px 5dvw;
+    background-color: var(--scnd-text-color);
 }
 h1 {
     color: var(--primary-color);
-    margin: 40px 0;
+    margin-bottom: 40px;
 }
 
 .content-container img {
@@ -132,13 +175,9 @@ h1 {
     color: var(--scnd-color-nav);
 }
 
-.ingredients-list,.steps-list {
+.ingredients-list {
     margin-bottom: 40px;
-}
-
-.steps-list {
-    margin-bottom: 40px;
-}
+} 
 
 .step::marker {
     content: counter(list-item) " - ";
@@ -162,9 +201,15 @@ h1 {
 /* ----- FOOTER STARTS ----- */
 
 footer {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     background-color: #333;
     color: #ededed;
 }
+
+#TOPlink {
+    text-decoration: underline;
+    color: inherit;
+}
+
 /* ----- FOOTER ENDS ----- */

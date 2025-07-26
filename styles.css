@@ -56,11 +56,18 @@ body {
     background-color: var(--scnd-color);
 }
 
+/* ----- HEADER SECTION ----- */
+
 h1 {
     text-align: center;
     margin: 40px;
     color: var(--primary-color);
 }
+
+/* ----- HEADER ENDS ----- */
+
+
+/* ----- MAIN STARTS ----- */
 
 .recipe-nav-container {
     width: 100%;
@@ -109,9 +116,21 @@ h1 {
     text-shadow: 0 0 3px var(--scnd-text-color);
 }
 
+/* ----- MAIN ENDS ----- */
+
+
+/* ----- FOOTER STARTS ----- */
+
 footer {
-    padding: 25px;
+    padding: 20px;
     text-align: center;
     background-color: #333;
     color: #ededed;
 }
+
+#TOPlink {
+    text-decoration: underline;
+    color: inherit;
+}
+
+/* ----- FOOTER ENDS ----- */
